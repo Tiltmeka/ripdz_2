@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title> {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+<div>
+    <aside>
+   <!-- <img src="{% static 'main/img/2.jpg' %}">-->
+        <span class="logo">Навигация</span>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Начальная страница</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i>О сайте</li></a>
+            <a href="{% url 'music_list' %}"><li><i class="fas fa-guitar"></i>Список исполнителей</li></a>
+
+        </ul>
+        
+    </aside>
+    </div>
+    <main>
+        {% block body %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

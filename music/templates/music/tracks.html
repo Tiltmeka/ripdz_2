@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Страница с треками
+{% endblock %}
+
+{% block body %}
+<div class="features">
+    <h1>Список треков альбома {{ album.name }}</h1>
+</div>
+<div class="track_list">
+    <ul>
+    {% for track in tracks %}
+            <li>{{ track.song_name }}</li>
+    {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
+

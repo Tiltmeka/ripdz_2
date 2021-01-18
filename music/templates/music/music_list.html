@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Страница с группами
+{% endblock %}
+
+{% block body %}
+<div class="features">
+    <h1>Список исполнителей</h1>
+</div>
+<div class="m_list">
+        <ul>
+            {% for band in bands %}
+             <a href="{% url 'albums' band.id %}"><li>{{ band.band_name }}</li></a>
+            {% endfor %}
+            <br>
+
+            {% for el in stages %}
+             <a href="{% url 'stage' el.id %}"> <li>{{ el.stage_name }}</li></a>
+            {% endfor %}
+        </ul>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,137 @@
+
+body{
+    background: #000000;
+}
+
+aside {
+    float: left;
+    background: #0a0a0a;
+    width: 20%;
+    height: 130vh;
+    padding: 2.5%;
+    overflow-x: auto;
+    color: white;
+    border-right: 2px solid white;
+    display: block;
+}
+
+
+
+aside img{
+    width: 80px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -55px;
+    left: -30px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-top: 20px;
+     position: relative;
+    top: -55px;
+    left: -50px;
+}
+
+aside ul li:hover, aside ul a{
+    color: #eb5959;
+    text-decoration: none;
+}
+
+
+
+main .features{
+    float: left;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p{max-width: 400px; margin: 20px auto; }
+
+news .alert {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+    background: #000000;
+}
+
+
+main .m_list {
+    float: left;
+    height: 100vh;
+    color: white;
+}
+
+.m_list ul {list-style: none}
+
+.m_list ul li {
+    font-size: 40px;
+    color: white;
+}
+
+.m_list ul li:hover, .m_list ul a{
+    color: #eb5959;
+    text-decoration: none;
+}
+
+
+
+
+main .album_list {
+
+    text-align: center;
+    float: center;
+    color: white;
+    top: -50px;
+}
+
+main .album_list ul {list-style: none}
+
+main .album_list ul li {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+main .track_list {
+ font-size: 23px;
+    text-align: left;
+    float: left;
+    color: white;
+     position: relative;
+    top: 10px;
+}
+
+main .track_list ul {list-style: none}
+
+
+
+.numbered-list {
+  counter-reset: counter-name;
+}
+
+.numbered-list__counter {
+  counter-increment: counter-name;
+}
+
+.numbered-list__counter:before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+}
