@@ -14,10 +14,6 @@
              <a href="{% url 'albums' band.id %}"><li>{{ band.band_name }}</li></a>
             {% endfor %}
             <br>
-
-            {% for el in stages %}
-             <a href="{% url 'stage' el.id %}"> <li>{{ el.stage_name }}</li></a>
-            {% endfor %}
         </ul>
 </div>
 

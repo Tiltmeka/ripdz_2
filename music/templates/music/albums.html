@@ -15,10 +15,16 @@
         <li>{{ album.name }} </li>
         <li1>{{ album.release_date }}</li1>
     {% endfor %}
-        <br>
-        {% for el in stages %}
+    </ul>
+</div>
+<div class="album_list">
+    <h1>Список Фестивалей {{ band.band_name }}</h1>
+</div>
+<div class="album_list">
+    <ul>
+    {% for el in stages %}
         <p><a href="{% url 'stage' el.id %}">{{ el.stage_name }}</a></p>
     {% endfor %}
-    </ul>
+        </ul>
 </div>
 {% endblock %}

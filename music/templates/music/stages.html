@@ -1,17 +1,16 @@
 {% extends 'main/layout.html' %}
 
 {% block title %}
-Страница с альбомами
+Страница с исполнителями фестиваля
 {% endblock %}
 
 {% block body %}
-<div class="features">
-    <h1>Список исполнителей {{ Stage.stage_name }}</h1>
-</div>
-<div class="album_list">
+<h1 class="features">Список исполнителей данного фестиваля</h1>
+
+<div class="stages">
     <ul>
     {% for el in band %}
-       <li>{{ el.band_name }} </li>
+       <li>{{ el.band_name }}</li>
     {% endfor %}
     </ul>
 </div>
